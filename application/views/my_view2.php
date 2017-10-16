@@ -8,8 +8,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 <center><h1><b>Show data from controller</b></h1></center>
 	<?php
-			echo "Name: ".$name."<br>";
-			echo "Email: ".$email."<br>";
+		foreach($users as $user)
+        echo "Name: ".$user."<br>";
 	?>
 </body>
 </html>

@@ -22,8 +22,8 @@ class Test extends CI_Controller {
 	public function hello(){
 		echo "Hello world<br>";
 		$this->_myprivate();
-		$data['name']  	= 'Somchai Namdee';
-		$data['email']	= 'somchai@gmail.com';
+		$data['name']  	= 'Naruapon Suwanwijit';
+		$data['email']	= 'naruapon@gmail.com';
 		$this->load->view('my_view',$data);
 	}
 
@@ -37,6 +37,10 @@ class Test extends CI_Controller {
 	     echo "Hello, ".$name." ".$surname;
 	}
 
+	public function user2(){
+		$data['users'] = array('Somchai','Narong','Surat');
+		$this->load->view('my_view2',$data);
+	}
 
 
 
